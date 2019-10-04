@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Mentee's Dashpage</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+background-image: url("Web.png");
+background-repeat: no-repeat;
+background-size: 1555px 760px;
+
+}
+
+/* Style the header */
+header {
+  
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+
+}
+
+a:link {
+  background-color: transparent;
+  text-decoration: none;
+}
+ a:focus {
+    box-shadow: 0 0 3px 7px grey;
+    background: lightgrey;
+  }
+  
+a:active {
+    background-color: blue;
+    color: white;
+  }
+
+.tfbutton2{
+background:darkblue;
+color:#eee;
+border-radius: 30px;
+
+}
+.tfbutton2:hover {
+background: #4ea923;
+}
+
+.tftextinput2{
+border-radius: 30px;
+}
+
+.tftextinput2:focus{
+outline: none;
+background: #fff; /* Fallback color for non-css3 browsers */
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 40%;
+  height: 400px; /* only for demonstration, should be removed */
+  padding-left: 150px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+   
+float: left;
+  padding: 20px;
+  width: 60%;
+  height: 400px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  padding-left: 150px;
+  text-align: left;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+ <div>
+  
+ <table>
+<tr><td align="left" width="50%"><img src="Image 4.png" alt="Mentee logo" width="100" height="100" align="right"></td><td align="right" width="50%"><p></p><form id="tfnewsearch" align="left" method="get" action="http://www.google.com">
+		        <input type="text" id="tfq" class="tftextinput2" name="q" size="21" maxlength="120" value=" Search our website"><input type="submit" value="Search" class="tfbutton2">
+		</form></td>
+		</tr>
+</table>
+</div>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><font color="black" size="4px">Mentee's Name</font></li><br>
+      <li><font color="black" size="3px">Semester</font></li><br>
+      <li><font color="black" size="2px">Menu</font></li>
+      <li><a href="home.html">Home</a></li></br>
+
+      <li><img src="Repeat Grid 1.png">&nbsp&nbsp<a href="#">All Courses</a></li><br>
+     
+      <li><a href="#">Mentor Details</a></li>
+     
+     
+    </ul>
+  </nav>
+  
+  <article>
+
+    <h1><u>All Courses</u></h1>
+    <ul>
+      <li><a href="#">Progress Report</a>&nbsp&nbsp<a href="#">Personal Details</a></li>
+     
+    </ul>
+    <div style= "width: 400px;
+    border-width:3px;  
+    border-style:outset;
+    box-shadow: 5px 10px #888888;
+    border-radius: 25px;
+    padding: 50px;
+    margin: 10px;">
+
+    <h3>Subject 1</h3>
+    <h3>Subject 2</h3>
+    <h3>Subject 3</h3>
+    <h3>Subject 4</h3>
+    <h3>Subject 5</h3>
+
+    </div>
+  </article>
+</section>
+
+<footer>
+     <img src="download.png" height=25px width=25px>&nbsp&nbsp<a href="mentee login.html" align="left">Log Out</a>     
+</footer>
+</body>
+</html>
